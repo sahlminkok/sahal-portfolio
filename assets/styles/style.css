@@ -23,7 +23,7 @@ body {
   line-height: 1.6rem;
   letter-spacing: 0.6px; }
 
-.headline-header {
+.headline {
   text-align: center; }
   .headline-header h1 {
     font-size: 4rem;
@@ -34,6 +34,17 @@ body {
     font-size: 3.2rem;
     font-weight: 500;
     color: #edecff; }
+  .headline-supporting-text {
+    padding-top: 4rem; }
+    .headline-supporting-text p {
+      font-size: 2rem;
+      font-weight: 400;
+      color: #edecff; }
+
+.divider {
+  padding-top: 2.4rem; }
+  .divider hr {
+    color: #646369; }
 
 .header nav ul {
   display: flex;
