@@ -4,7 +4,7 @@
   "description": "My Portfolio for showcasing my latest projects",
   "main": "index.js",
   "scripts": {
-    "compile:sass": "node-sass assets/styles/main.scss assets/styles/style.css"
+    "compile:sass": "node-sass assets/styles/main.scss assets/styles/style.css -w"
   },
   "keywords": [],
   "author": "Sahalu Aminu",
