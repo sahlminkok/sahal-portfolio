@@ -11,19 +11,33 @@ body {
   letter-spacing: 0.6px;
 }
 
-.headline-header {
+
+.headline {
   text-align: center;
 
-  & h1 {
-    font-size: 4rem;
-    font-weight: 700;
-    color: $color-primary-2;
-    letter-spacing: 0.37px;
+  &-header {
+  
+    & h1 {
+      font-size: 4rem;
+      font-weight: 700;
+      color: $color-primary-2;
+      letter-spacing: 0.37px;
+    }
+  
+    & h2 {
+      font-size: 3.2rem;
+      font-weight: 500;
+      color: $color-primary-4;
+    }
   }
+  
+  &-supporting-text {
+    padding-top: 4rem;
 
-  & h2 {
-    font-size: 3.2rem;
-    font-weight: 500;
-    color: $color-primary-4;
+    & p {
+      font-size: 2rem;
+      font-weight: 400;
+      color: $color-primary-4;
+    }
   }
 }
