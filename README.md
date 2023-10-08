@@ -2,7 +2,7 @@
 
 
 <div align="center">
-  <h3><b>Portfolio</b></h3>
+  <h1>Portfolio</h1>
 </div>
 
 <!-- TABLE OF CONTENTS -->
