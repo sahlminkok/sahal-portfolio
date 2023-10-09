@@ -3,5 +3,14 @@
   padding-top: 4.7rem;
   background-image: url('../../../assets/images/top_circles.svg');
   background-size: cover;
-  background-position: center top;
+  background-position: top;
+
+  &-tech-stack {
+    &-first {
+      display: flex;
+      align-items: flex-start;
+      gap: 25%;
+    }
+  }
 }
+
