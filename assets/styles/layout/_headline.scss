@@ -4,6 +4,7 @@
   background-image: url('../../../assets/images/top_circles.svg');
   background-size: contain;
   background-position: top;
+  background-repeat: no-repeat;
 
   &-tech-stack {
     &-first {
@@ -12,5 +13,24 @@
       gap: 25%;
     }
   }
-}
 
+  &-supporting-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.4rem;
+    margin-top: 4rem;
+
+    &-text {
+      display: flex;
+      align-items: center;
+      gap: 1.2rem;
+
+      p {
+        font-size: 2rem;
+        font-weight: 500;
+        color: $color-primary-3;
+      }
+    }
+  }
+}
