@@ -3,6 +3,7 @@
   text-align: left;
   color: $color-primary-4;
   padding: 1.2rem;
+  width: 50%;
 
   &-header {
     color: $color-primary-2;
@@ -19,6 +20,7 @@
 
   &-last {
     padding-bottom: 0;
+    width: 100%;
   }
 }
 

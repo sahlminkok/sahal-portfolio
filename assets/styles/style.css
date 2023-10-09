@@ -51,7 +51,8 @@ body {
   list-style: none;
   text-align: left;
   color: #edecff;
-  padding: 1.2rem; }
+  padding: 1.2rem;
+  width: 50%; }
   .tech-stack-header {
     color: #7d73fc;
     font-size: 1.3rem;
@@ -62,7 +63,8 @@ body {
     font-weight: 400;
     padding-bottom: 0.7rem; }
   .tech-stack-last {
-    padding-bottom: 0; }
+    padding-bottom: 0;
+    width: 100%; }
 
 .social-media ul {
   list-style: none;
@@ -88,7 +90,7 @@ body {
   .headline-tech-stack-first {
     display: flex;
     align-items: flex-start;
-    gap: 25%; }
+    justify-content: space-between; }
   .headline-supporting-item {
     display: flex;
     flex-direction: column;
