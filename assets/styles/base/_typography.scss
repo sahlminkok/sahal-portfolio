@@ -5,10 +5,11 @@ body {
 }
 
 .logo {
-  font-size: 1.8rem;
+  font-size: 2rem;
   font-weight: 500;
   line-height: 1.6rem;
   letter-spacing: 0.6px;
+  font-family: 'Pacifico', cursive;
 }
 
 
@@ -17,14 +18,14 @@ body {
 
   &-header {
   
-    & h1 {
+    h1 {
       font-size: 4rem;
       font-weight: 700;
       color: $color-primary-2;
       letter-spacing: 0.37px;
     }
   
-    & h2 {
+    h2 {
       font-size: 3.2rem;
       font-weight: 500;
       color: $color-primary-4;
@@ -34,7 +35,7 @@ body {
   &-supporting-text {
     padding-top: 4rem;
 
-    & p {
+    p {
       font-size: 2rem;
       font-weight: 400;
       color: $color-primary-4;
