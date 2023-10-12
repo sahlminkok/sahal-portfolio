@@ -166,8 +166,7 @@ body {
         color: #A2A3AE; }
 
 .recent-works {
-  padding: 0 2.4rem;
-  padding-top: 8rem;
+  padding: 8rem 2.4rem 9rem 2.4rem;
   background-image: url("../../../assets/images/mobile_background.svg");
   background-size: contain;
   background-repeat: no-repeat;
@@ -185,3 +184,50 @@ body {
   flex-direction: column;
   gap: 4rem;
   padding-top: 4.8rem; }
+
+.contact-us {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  padding: 3rem 2.4rem 10rem 2.4rem; }
+  .contact-us-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.4rem; }
+    .contact-us-text h3 {
+      font-size: 3.2rem;
+      font-weight: 500;
+      line-height: 4.4rem;
+      color: #9490FF;
+      text-transform: uppercase; }
+    .contact-us-text p {
+      font-family: Inter, sans-serif;
+      font-size: 1.6rem;
+      font-weight: 400;
+      line-height: 2.4rem;
+      color: #F5F5FF;
+      text-align: center; }
+  .contact-us-form {
+    font-size: 1.6rem;
+    line-height: 2.4rem; }
+    .contact-us-form form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 2.4rem; }
+      .contact-us-form form input,
+      .contact-us-form form textarea {
+        width: 100%;
+        padding: 1.5rem 1.6rem;
+        font-family: Inter, sans-serif;
+        font-weight: 400; }
+      .contact-us-form form button {
+        border: none;
+        padding: 1.2rem 1.5rem;
+        background-color: #7d73fc;
+        font-size: 1.2rem;
+        font-weight: 500;
+        line-height: 2.4rem;
+        letter-spacing: 0.36px;
+        color: #edecff; }
