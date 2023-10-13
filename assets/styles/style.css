@@ -93,17 +93,17 @@ body {
       font-size: 2rem;
       font-weight: 400;
       line-height: 2.8rem;
-      color: #DCDCE8; }
+      color: #dcdce8; }
     .project-details a {
-      color: #EDECFF; }
+      color: #edecff; }
       .project-details a:hover {
-        box-shadow: 0px 0.8rem 1.6rem 0px rgba(125, 115, 252, 0.48);
+        box-shadow: 0 0.8rem 1.6rem 0 rgba(125, 115, 252, 0.48);
         transform: translateY(-0.2rem); }
       .project-details a:active {
-        background-color: #5E42D7;
+        background-color: #5e42d7;
         box-shadow: 0 0.5rem 1rem rgba(125, 115, 252, 0.15);
         transform: translateY(0);
-        color: #EDECFF; }
+        color: #edecff; }
 
 .stack ul {
   list-style: none;
@@ -164,7 +164,7 @@ body {
       .headline-supporting-item-text p {
         font-size: 2rem;
         font-weight: 500;
-        color: #A2A3AE; }
+        color: #a2a3ae; }
 
 .recent-works {
   padding: 8rem 2.4rem 9rem 2.4rem;
@@ -176,7 +176,7 @@ body {
   .recent-works h2 {
     font-size: 4rem;
     font-weight: 500;
-    color: #9490FF;
+    color: #9490ff;
     text-transform: uppercase;
     line-height: 5.2rem; }
 
@@ -200,14 +200,14 @@ body {
       font-size: 3.2rem;
       font-weight: 500;
       line-height: 4.4rem;
-      color: #9490FF;
+      color: #9490ff;
       text-transform: uppercase; }
     .contact-us-text p {
       font-family: Inter, sans-serif;
       font-size: 1.6rem;
       font-weight: 400;
       line-height: 2.4rem;
-      color: #F5F5FF;
+      color: #f5f5ff;
       text-align: center; }
   .contact-us-form {
     font-size: 1.6rem;
@@ -243,12 +243,12 @@ body {
     font-size: 2rem;
     font-weight: 400;
     line-height: 2.8rem;
-    color: #EBEBFF; }
+    color: #ebebff; }
   .footer-home-indicator {
     width: 134px;
     height: 5px;
     flex-shrink: 0;
     border-radius: 10px;
-    background-color: #0D151E;
+    background-color: #0d151e;
     margin-top: 2.1rem;
     margin-bottom: 1rem; }
