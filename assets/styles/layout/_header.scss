@@ -1,0 +1,13 @@
+.header {
+  nav {
+    ul {
+      display: flex;
+      justify-content: space-between;
+      list-style: none;
+      padding: 2.5rem 10%;
+      align-items: center;
+      color: $color-primary-4;
+      box-shadow: 0 2px 4px rgba($color-primary-2, 0.2);
+    }
+  }
+}

@@ -4,9 +4,206 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="assets/styles/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&family=Pacifico&family=Roboto:wght@300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
     <title>Sahalu Aminu</title>
   </head>
   <body>
-    <h1>Hello, this is my Portfolio</h1>
+    <header class="header">
+      <nav>
+        <ul>
+          <li><p class="logo">Sahalu Aminu</p></li>
+          <li><img src="assets/images/icon_menu.svg" alt="Menu Icon" /></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="headline">
+        <div class="headline-header">
+          <h1>Sahalu Aminu</h1>
+          <h2>Software Developer</h2>
+        </div>
+
+        <div class="headline-supporting-text">
+          <p>
+            I can help you build a product , feature or website Look through
+            some of my work and experience! If you like what you see and have a
+            project you need coded, don't hesitate to contact me.
+          </p>
+          <div class="divider">
+            <hr />
+          </div>
+        </div>
+
+        <div class="headline-tech-stack">
+          <div class="headline-tech-stack-first">
+            <ul class="tech-stack">
+              <li class="tech-stack-header">Language</li>
+              <li>JavaScript</li>
+              <li>Ruby</li>
+              <li>HTML</li>
+              <li>CSS</li>
+            </ul>
+
+            <ul class="tech-stack">
+              <li class="tech-stack-header">Frameworks</li>
+              <li>Ruby on Rails</li>
+              <li>React</li>
+              <li>Rspec</li>
+              <li>Capybara</li>
+              <li>Sass</li>
+            </ul>
+          </div>
+
+          <ul class="tech-stack tech-stack-last">
+            <li class="tech-stack-header">Skills</li>
+            <li>CLI</li>
+            <li>GitHub</li>
+            <li>API Design</li>
+            <li>Version Control</li>
+            <li>Database Management</li>
+          </ul>
+
+          <div class="divider">
+            <hr />
+          </div>
+        </div>
+
+        <div class="headline-supporting-item">
+          <div class="social-media">
+            <ul>
+              <li>
+                <a href="https://github.com/sahlminkok"
+                  ><img src="assets/images/github_icon.svg" alt="GitHub"
+                /></a>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/in/sahlminkok"
+                  ><img src="assets/images/linkedin_icon.svg" alt="LinkedIn"
+                /></a>
+              </li>
+              <li>
+                <a href="https://wellfound.com/u/sahalu-aminu"
+                  ><img src="assets/images/angelist_icon.svg" alt="Angelist"
+                /></a>
+              </li>
+              <li>
+                <a href="https://twitter.com/sahlminkok"
+                  ><img src="assets/images/twitter_icon.svg" alt="Twitter"
+                /></a>
+              </li>
+              <li>
+                <a href="https://medium.com/@sahlminkok"
+                  ><img src="assets/images/medium_icon.svg" alt="Medium"
+                /></a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="headline-supporting-item-text">
+            <img src="assets/images/arrow_down.svg" alt="Down Arrow" />
+            <p>Work</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="recent-works">
+        <h2>My recent work</h2>
+
+        <div class="divider">
+          <hr />
+        </div>
+
+        <div class="projects"></div>
+      </section>
+
+      <section class="contact-us">
+        <div class="contact-us-text">
+          <h3>Contact us</h3>
+          <p>
+            If you have an application you are interested in developing, a
+            feature that you need built or a project that needs coding. I'd love
+            to help with it.
+          </p>
+        </div>
+        <div class="contact-us-form">
+          <form action="https://formspree.io/f/mknlkzny" method="POST">
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Full Name"
+              required
+              minlength="3"
+              maxlength="30"
+            />
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Your Email Address"
+              required
+            />
+            <textarea
+              name="message"
+              id="message"
+              cols="29"
+              rows="10"
+              placeholder="Enter text here"
+              required
+              maxlength="500"
+            ></textarea>
+            <button type="submit" class="btn">Get in touch</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="divider footer-divider">
+        <hr />
+      </div>
+
+      <div class="social-media footer-icons">
+        <ul>
+          <li>
+            <a href="https://github.com/sahlminkok"
+              ><img src="assets/images/github_icon.svg" alt="GitHub"
+            /></a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/sahlminkok"
+              ><img src="assets/images/linkedin_icon.svg" alt="LinkedIn"
+            /></a>
+          </li>
+          <li>
+            <a href="https://wellfound.com/u/sahalu-aminu"
+              ><img src="assets/images/angelist_icon.svg" alt="Angelist"
+            /></a>
+          </li>
+          <li>
+            <a href="https://twitter.com/sahlminkok"
+              ><img src="assets/images/twitter_icon.svg" alt="Twitter"
+            /></a>
+          </li>
+          <li>
+            <a href="https://medium.com/@sahlminkok"
+              ><img src="assets/images/medium_icon.svg" alt="Medium"
+            /></a>
+          </li>
+        </ul>
+      </div>
+
+      <a href="mailto:sahalu.aminuk@gmail.com">sahalu.aminuk@gmail.com</a>
+
+      <div class="footer-home-indicator"></div>
+    </footer>
+
+    <script src="./index.js"></script>
   </body>
 </html>
