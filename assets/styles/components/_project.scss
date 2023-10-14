@@ -29,18 +29,6 @@
 
     a {
       color: #edecff;
-
-      &:hover {
-        box-shadow: 0 0.8rem 1.6rem 0 rgba($color-primary-2, 0.48);
-        transform: translateY(-0.2rem);
-      }
-
-      &:active {
-        background-color: #5e42d7;
-        box-shadow: 0 0.5rem 1rem rgba($color-primary-2, 0.15);
-        transform: translateY(0);
-        color: #edecff;
-      }
     }
   }
 }

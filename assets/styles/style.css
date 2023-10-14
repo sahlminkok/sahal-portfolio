@@ -96,14 +96,6 @@ body {
       color: #dcdce8; }
     .project-details a {
       color: #edecff; }
-      .project-details a:hover {
-        box-shadow: 0 0.8rem 1.6rem 0 rgba(125, 115, 252, 0.48);
-        transform: translateY(-0.2rem); }
-      .project-details a:active {
-        background-color: #5e42d7;
-        box-shadow: 0 0.5rem 1rem rgba(125, 115, 252, 0.15);
-        transform: translateY(0);
-        color: #edecff; }
 
 .stack ul {
   list-style: none;
@@ -118,7 +110,7 @@ body {
     .stack ul li:not(:last-of-type) {
       border-right: 1px solid #555; }
 
-.btn:link, .btn:active {
+.btn {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -130,6 +122,16 @@ body {
   line-height: 2.4rem;
   letter-spacing: 0.36px;
   text-decoration: none; }
+  .btn:hover {
+    box-shadow: 0 0.8rem 1.6rem 0 rgba(125, 115, 252, 0.48);
+    transform: translateY(-0.2rem); }
+  .btn:active, .btn:focus {
+    background-color: #5e42d7;
+    box-shadow: 0 0.5rem 1rem rgba(125, 115, 252, 0.15);
+    transform: translateY(0);
+    color: #edecff; }
+  .btn:disabled {
+    background-color: #000; }
 
 .header nav ul {
   display: flex;
@@ -226,12 +228,8 @@ body {
       .contact-us-form form button {
         border: none;
         padding: 1.2rem 1.5rem;
-        background-color: #7d73fc;
-        font-size: 1.2rem;
-        font-weight: 500;
-        line-height: 2.4rem;
-        letter-spacing: 0.36px;
-        color: #edecff; }
+        color: #edecff;
+        cursor: pointer; }
 
 .footer {
   display: flex;
