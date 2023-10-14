@@ -16,14 +16,26 @@
     <header class="header">
       <nav>
         <ul>
-          <li><p class="logo">Sahalu Aminu</p></li>
-          <li><img src="assets/images/icon_menu.svg" alt="Menu Icon" /></li>
+          <div>
+            <li><p class="logo">Sahalu Aminu</p></li>
+          </div>
+          <div>
+            <li class="header-mobile"><img src="assets/images/icon_menu.svg" alt="Menu Icon" /></li>
+            <li class="header-desktop"><a href="#portfolio">Portfolio</a></li>
+            <li class="header-desktop"><a href="#about">About</a></li>
+            <li class="header-desktop"><a href="#contact">Contact</a></li>
+            <li class="header-desktop">
+              <a href="#mail"
+                ><img src="./assets/images/mail_icon.svg" alt="Mail"
+              /></a>
+            </li>
+          </div>
         </ul>
       </nav>
     </header>
 
     <main>
-      <section class="headline">
+      <section class="headline" id="portfolio">
         <div class="headline-header">
           <h1>Sahalu Aminu</h1>
           <h2>Software Developer</h2>
@@ -112,7 +124,7 @@
         </div>
       </section>
 
-      <section class="recent-works">
+      <section class="recent-works" id="about">
         <h2>My recent work</h2>
 
         <div class="divider">
@@ -122,7 +134,7 @@
         <div class="projects"></div>
       </section>
 
-      <section class="contact-us">
+      <section class="contact-us" id="contact">
         <div class="contact-us-text">
           <h3>Contact us</h3>
           <p>
@@ -199,7 +211,7 @@
         </ul>
       </div>
 
-      <a href="mailto:sahalu.aminuk@gmail.com">sahalu.aminuk@gmail.com</a>
+      <a href="mailto:sahalu.aminuk@gmail.com" id="mail">sahalu.aminuk@gmail.com</a>
 
       <div class="footer-home-indicator"></div>
     </footer>
