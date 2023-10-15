@@ -41,3 +41,18 @@ body {
     }
   }
 }
+
+@media screen and (min-width: 48em) {
+  .headline {
+    &-header {
+      h1 {
+        font-size: 700%;
+        line-height: normal;
+      }
+
+      h2 {
+        font-size: 4rem;
+      }
+    }
+  }
+}
