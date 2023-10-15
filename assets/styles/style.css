@@ -43,6 +43,13 @@ body {
       font-weight: 400;
       color: #edecff; }
 
+@media screen and (min-width: 48em) {
+  .headline-header h1 {
+    font-size: 700%;
+    line-height: normal; }
+  .headline-header h2 {
+    font-size: 4rem; } }
+
 .divider {
   padding-top: 2.4rem;
   width: 100%; }
@@ -67,6 +74,16 @@ body {
   .tech-stack-last {
     padding-bottom: 0;
     width: 100%; }
+
+@media screen and (min-width: 48em) {
+  .tech-stack {
+    width: 100% !important; }
+    .tech-stack-header {
+      font-size: 1.8rem;
+      font-weight: 700;
+      line-height: 29.333px; }
+    .tech-stack li:not(:first-child) {
+      line-height: 28.444px; } }
 
 .social-media ul {
   list-style: none;
@@ -176,9 +193,9 @@ body {
   background-size: contain;
   background-position: top;
   background-repeat: no-repeat; }
-  .headline-tech-stack-first {
+  .headline-tech-stack {
     display: flex;
-    align-items: flex-start;
+    flex-wrap: wrap;
     justify-content: space-between; }
   .headline-supporting-item {
     display: flex;
@@ -190,10 +207,41 @@ body {
       display: flex;
       align-items: center;
       gap: 1.2rem; }
+      .headline-supporting-item-text-desktop {
+        display: none; }
       .headline-supporting-item-text p {
         font-size: 2rem;
         font-weight: 500;
         color: #a2a3ae; }
+
+@media screen and (min-width: 48em) {
+  .headline {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(../../../assets/images/top_circles_desktop.svg);
+    background-position: center 30%;
+    padding: 11.4rem 10%; }
+    .headline-supporting-text {
+      padding-top: 8.8rem;
+      width: 40%; }
+      .headline-supporting-text-desktop {
+        padding-top: 3rem; }
+    .headline-tech-stack {
+      display: flex;
+      flex-wrap: nowrap;
+      justify-content: space-between;
+      margin: 0 auto;
+      width: 40%;
+      padding-top: 1rem; }
+    .headline-divider {
+      width: 40%; }
+    .headline-supporting-item {
+      flex-direction: row;
+      justify-content: space-between;
+      width: 100%; }
+      .headline-supporting-item-text-desktop {
+        display: flex; } }
 
 .recent-works {
   padding: 8rem 2.4rem 9rem 2.4rem;
