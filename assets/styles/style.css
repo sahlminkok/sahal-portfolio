@@ -333,7 +333,7 @@ body {
         font-weight: 400; }
         .contact-us-form form input:focus,
         .contact-us-form form textarea:focus {
-          background-color: #F7F3FF;
+          background-color: #f7f3ff;
           color: #191765;
           outline: none;
           border: none; }
