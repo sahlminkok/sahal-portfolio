@@ -300,6 +300,8 @@ body {
     flex-direction: column;
     align-items: center;
     gap: 2.4rem; }
+    .contact-us-text-desktop {
+      display: none; }
     .contact-us-text h3 {
       font-size: 3.2rem;
       font-weight: 500;
@@ -316,22 +318,57 @@ body {
   .contact-us-form {
     font-size: 1.6rem;
     line-height: 2.4rem; }
+    .contact-us-form-desktop {
+      display: none; }
     .contact-us-form form {
       display: flex;
       flex-direction: column;
       align-items: center;
-      gap: 2.4rem; }
+      gap: 2rem; }
       .contact-us-form form input,
       .contact-us-form form textarea {
         width: 100%;
         padding: 1.5rem 1.6rem;
         font-family: Inter, sans-serif;
         font-weight: 400; }
+        .contact-us-form form input:focus,
+        .contact-us-form form textarea:focus {
+          background-color: #F7F3FF;
+          color: #191765;
+          outline: none;
+          border: none; }
       .contact-us-form form button {
         border: none;
         padding: 1.2rem 1.5rem;
         color: #edecff;
         cursor: pointer; }
+
+@media screen and (min-width: 48em) {
+  .contact-us {
+    width: 50%;
+    margin: 0 auto;
+    align-items: center;
+    gap: 8.8rem;
+    padding-top: 11.4rem;
+    padding-bottom: 11.4rem; }
+    .contact-us-text-mobile {
+      display: none; }
+    .contact-us-text-desktop {
+      display: block; }
+    .contact-us-text h3 {
+      text-transform: none; }
+    .contact-us-form {
+      width: 100%; }
+      .contact-us-form-mobile {
+        display: none; }
+      .contact-us-form-desktop {
+        display: flex;
+        width: 100%;
+        gap: 2.4rem;
+        justify-content: space-between; }
+      .contact-us-form form button {
+        width: 16%;
+        margin-top: 4.5rem; } }
 
 .footer {
   display: flex;
