@@ -106,13 +106,26 @@ body {
       font-weight: 500;
       color: #fff; }
     .project-details p {
-      font-family: 'Inter', sans-serif;
+      font-family: "Inter", sans-serif;
       font-size: 2rem;
       font-weight: 400;
       line-height: 2.8rem;
       color: #dcdce8; }
     .project-details a {
       color: #edecff; }
+
+@media screen and (min-width: 48em) {
+  .project {
+    flex-direction: row;
+    align-items: center; }
+    .project:nth-child(2n) {
+      flex-direction: row-reverse; }
+    .project img {
+      width: 250%; }
+    .project-details h3 {
+      font-size: 4rem;
+      font-weight: 700;
+      line-height: 5.2rem; } }
 
 .stack ul {
   list-style: none;
@@ -202,7 +215,7 @@ body {
     flex-direction: column;
     align-items: center;
     gap: 2.4rem;
-    margin-top: 4rem; }
+    padding-top: 4rem; }
     .headline-supporting-item-text {
       display: flex;
       align-items: center;
@@ -238,8 +251,9 @@ body {
       width: 40%; }
     .headline-supporting-item {
       flex-direction: row;
-      justify-content: space-between;
-      width: 100%; }
+      justify-content: space-around;
+      width: 100%;
+      padding-top: 8.8rem; }
       .headline-supporting-item-text-desktop {
         display: flex; } }
 
@@ -262,6 +276,19 @@ body {
   flex-direction: column;
   gap: 4rem;
   padding-top: 4.8rem; }
+
+@media screen and (min-width: 48em) {
+  .recent-works {
+    padding: 11.4rem 10%;
+    background-image: url(../../../assets/images/desktop_background.svg);
+    background-position-y: 30rem; }
+    .recent-works h2 {
+      font-size: 6.4rem;
+      line-height: 11.4rem;
+      text-transform: none; }
+  .projects {
+    padding-top: 8.8rem;
+    gap: 8.8rem; } }
 
 .contact-us {
   display: flex;
