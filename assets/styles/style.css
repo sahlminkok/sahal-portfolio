@@ -164,15 +164,6 @@ body {
   .btn:disabled {
     background-color: #000; }
 
-.header nav ul {
-  display: flex;
-  justify-content: space-between;
-  list-style: none;
-  padding: 2.5rem 10%;
-  align-items: center;
-  color: #edecff;
-  box-shadow: 0 2px 4px rgba(125, 115, 252, 0.2); }
-
 .header-mobile {
   display: flex;
   justify-content: center;
@@ -214,6 +205,15 @@ body {
 
 .header-desktop {
   display: none; }
+
+.header nav ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  padding: 2.5rem 10%;
+  align-items: center;
+  color: #edecff;
+  box-shadow: 0 2px 4px rgba(125, 115, 252, 0.2); }
 
 @media screen and (min-width: 48em) {
   .header nav ul {
