@@ -92,3 +92,20 @@ if (window.innerWidth >= 768) {
   desktopFirst.removeAttribute('required');
   desktopLast.removeAttribute('required');
 }
+
+// Mobile Menu
+
+const mobileMenu = document.querySelector('.header-mobile');
+const cancel = document.querySelector('#cancel');
+const hamburger = document.querySelector('#hamburger');
+
+const display = () => {
+  mobileMenu.classList.remove('header-mobile-visibility');
+};
+
+const hide = () => {
+  mobileMenu.classList.add('header-mobile-visibility');
+};
+
+hamburger.addEventListener('click', display);
+cancel.addEventListener('click', hide);
