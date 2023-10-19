@@ -43,6 +43,13 @@ body {
       font-weight: 400;
       color: #edecff; }
 
+@media screen and (min-width: 48em) {
+  .headline-header h1 {
+    font-size: 700%;
+    line-height: normal; }
+  .headline-header h2 {
+    font-size: 4rem; } }
+
 .divider {
   padding-top: 2.4rem;
   width: 100%; }
@@ -68,6 +75,16 @@ body {
     padding-bottom: 0;
     width: 100%; }
 
+@media screen and (min-width: 48em) {
+  .tech-stack {
+    width: 100% !important; }
+    .tech-stack-header {
+      font-size: 1.8rem;
+      font-weight: 700;
+      line-height: 29.333px; }
+    .tech-stack li:not(:first-child) {
+      line-height: 28.444px; } }
+
 .social-media ul {
   list-style: none;
   display: flex;
@@ -89,13 +106,26 @@ body {
       font-weight: 500;
       color: #fff; }
     .project-details p {
-      font-family: 'Inter', sans-serif;
+      font-family: "Inter", sans-serif;
       font-size: 2rem;
       font-weight: 400;
       line-height: 2.8rem;
       color: #dcdce8; }
     .project-details a {
       color: #edecff; }
+
+@media screen and (min-width: 48em) {
+  .project {
+    flex-direction: row;
+    align-items: center; }
+    .project:nth-child(2n) {
+      flex-direction: row-reverse; }
+    .project img {
+      width: 250%; }
+    .project-details h3 {
+      font-size: 4rem;
+      font-weight: 700;
+      line-height: 5.2rem; } }
 
 .stack ul {
   list-style: none;
@@ -121,7 +151,8 @@ body {
   font-weight: 500;
   line-height: 2.4rem;
   letter-spacing: 0.36px;
-  text-decoration: none; }
+  text-decoration: none;
+  white-space: nowrap; }
   .btn:hover {
     box-shadow: 0 0.8rem 1.6rem 0 rgba(125, 115, 252, 0.48);
     transform: translateY(-0.2rem); }
@@ -142,6 +173,32 @@ body {
   color: #edecff;
   box-shadow: 0 2px 4px rgba(125, 115, 252, 0.2); }
 
+.header-desktop {
+  display: none; }
+
+@media screen and (min-width: 48em) {
+  .header nav ul {
+    box-shadow: none;
+    padding: 1.6rem 10%; }
+    .header nav ul div {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.8rem;
+      justify-content: center; }
+      .header nav ul div li {
+        font-size: 1.5rem;
+        font-weight: 500;
+        line-height: 2rem; }
+        .header nav ul div li a {
+          padding: 1rem 1.2rem;
+          text-decoration: none;
+          color: #fff;
+          display: flex; }
+  .header-mobile {
+    display: none; }
+  .header-desktop {
+    display: block; } }
+
 .headline {
   padding: 0 2.4rem;
   padding-top: 4.7rem;
@@ -149,24 +206,56 @@ body {
   background-size: contain;
   background-position: top;
   background-repeat: no-repeat; }
-  .headline-tech-stack-first {
+  .headline-tech-stack {
     display: flex;
-    align-items: flex-start;
+    flex-wrap: wrap;
     justify-content: space-between; }
   .headline-supporting-item {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 2.4rem;
-    margin-top: 4rem; }
+    padding-top: 4rem; }
     .headline-supporting-item-text {
       display: flex;
       align-items: center;
       gap: 1.2rem; }
+      .headline-supporting-item-text-desktop {
+        display: none; }
       .headline-supporting-item-text p {
         font-size: 2rem;
         font-weight: 500;
         color: #a2a3ae; }
+
+@media screen and (min-width: 48em) {
+  .headline {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(../../../assets/images/top_circles_desktop.svg);
+    background-position: center 30%;
+    padding: 11.4rem 10%; }
+    .headline-supporting-text {
+      padding-top: 8.8rem;
+      width: 40%; }
+      .headline-supporting-text-desktop {
+        padding-top: 3rem; }
+    .headline-tech-stack {
+      display: flex;
+      flex-wrap: nowrap;
+      justify-content: space-between;
+      margin: 0 auto;
+      width: 40%;
+      padding-top: 1rem; }
+    .headline-divider {
+      width: 40%; }
+    .headline-supporting-item {
+      flex-direction: row;
+      justify-content: space-around;
+      width: 100%;
+      padding-top: 8.8rem; }
+      .headline-supporting-item-text-desktop {
+        display: flex; } }
 
 .recent-works {
   padding: 8rem 2.4rem 9rem 2.4rem;
@@ -188,6 +277,19 @@ body {
   gap: 4rem;
   padding-top: 4.8rem; }
 
+@media screen and (min-width: 48em) {
+  .recent-works {
+    padding: 11.4rem 10%;
+    background-image: url(../../../assets/images/desktop_background.svg);
+    background-position-y: 30rem; }
+    .recent-works h2 {
+      font-size: 6.4rem;
+      line-height: 11.4rem;
+      text-transform: none; }
+  .projects {
+    padding-top: 8.8rem;
+    gap: 8.8rem; } }
+
 .contact-us {
   display: flex;
   flex-direction: column;
@@ -198,6 +300,8 @@ body {
     flex-direction: column;
     align-items: center;
     gap: 2.4rem; }
+    .contact-us-text-desktop {
+      display: none; }
     .contact-us-text h3 {
       font-size: 3.2rem;
       font-weight: 500;
@@ -214,27 +318,67 @@ body {
   .contact-us-form {
     font-size: 1.6rem;
     line-height: 2.4rem; }
+    .contact-us-form-desktop {
+      display: none; }
     .contact-us-form form {
       display: flex;
       flex-direction: column;
       align-items: center;
-      gap: 2.4rem; }
+      gap: 2rem; }
       .contact-us-form form input,
       .contact-us-form form textarea {
         width: 100%;
         padding: 1.5rem 1.6rem;
         font-family: Inter, sans-serif;
         font-weight: 400; }
+        .contact-us-form form input:focus,
+        .contact-us-form form textarea:focus {
+          background-color: #f7f3ff;
+          color: #191765;
+          outline: none;
+          border: none; }
       .contact-us-form form button {
         border: none;
         padding: 1.2rem 1.5rem;
         color: #edecff;
         cursor: pointer; }
 
+@media screen and (min-width: 48em) {
+  .contact-us {
+    width: 50%;
+    margin: 0 auto;
+    align-items: center;
+    gap: 8.8rem;
+    padding-top: 11.4rem;
+    padding-bottom: 11.4rem; }
+    .contact-us-text-mobile {
+      display: none; }
+    .contact-us-text-desktop {
+      display: block; }
+    .contact-us-text h3 {
+      text-transform: none; }
+    .contact-us-form {
+      width: 100%; }
+      .contact-us-form-mobile {
+        display: none; }
+      .contact-us-form-desktop {
+        display: flex;
+        width: 100%;
+        gap: 2.4rem;
+        justify-content: space-between; }
+      .contact-us-form form button {
+        width: 16%;
+        margin-top: 4.5rem; } }
+
 .footer {
   display: flex;
   flex-direction: column;
   align-items: center; }
+  .footer-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
   .footer-icons {
     padding-top: 1.5rem; }
   .footer a {
@@ -251,3 +395,13 @@ body {
     background-color: #0d151e;
     margin-top: 2.1rem;
     margin-bottom: 1rem; }
+
+@media screen and (min-width: 48em) {
+  .footer-div {
+    flex-direction: row;
+    padding-bottom: 1.6rem; }
+    .footer-div-mail {
+      padding-top: 0.6rem;
+      padding-left: 2rem; }
+  .footer-home-indicator {
+    display: none; } }

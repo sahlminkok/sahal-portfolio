@@ -7,11 +7,9 @@
   background-repeat: no-repeat;
 
   &-tech-stack {
-    &-first {
-      display: flex;
-      align-items: flex-start;
-      justify-content: space-between;
-    }
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
   }
 
   &-supporting-item {
@@ -19,17 +17,63 @@
     flex-direction: column;
     align-items: center;
     gap: 2.4rem;
-    margin-top: 4rem;
+    padding-top: 4rem;
 
     &-text {
       display: flex;
       align-items: center;
       gap: 1.2rem;
 
+      &-desktop { display: none; }
+
       p {
         font-size: 2rem;
         font-weight: 500;
         color: $color-primary-3;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 48em) {
+  .headline {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(../../../assets/images/top_circles_desktop.svg);
+    background-position: center 30%;
+    padding: 11.4rem 10%;
+
+    &-supporting-text {
+      padding-top: 8.8rem;
+      width: 40%;
+
+      &-desktop {
+        padding-top: 3rem;
+      }
+    }
+
+    &-tech-stack {
+      display: flex;
+      flex-wrap: nowrap;
+      justify-content: space-between;
+      margin: 0 auto;
+      width: 40%;
+      padding-top: 1rem;
+    }
+
+    &-divider {
+      width: 40%;
+    }
+
+    &-supporting-item {
+      flex-direction: row;
+      justify-content: space-around;
+      width: 100%;
+      padding-top: 8.8rem;
+
+      &-text-desktop {
+        display: flex;
       }
     }
   }

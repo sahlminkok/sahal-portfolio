@@ -16,14 +16,28 @@
     <header class="header">
       <nav>
         <ul>
-          <li><p class="logo">Sahalu Aminu</p></li>
-          <li><img src="assets/images/icon_menu.svg" alt="Menu Icon" /></li>
+          <div>
+            <li><p class="logo">Sahalu Aminu</p></li>
+          </div>
+          <div>
+            <li class="header-mobile">
+              <img src="assets/images/icon_menu.svg" alt="Menu Icon" />
+            </li>
+            <li class="header-desktop"><a href="#portfolio">Portfolio</a></li>
+            <li class="header-desktop"><a href="#about">About</a></li>
+            <li class="header-desktop"><a href="#contact">Contact</a></li>
+            <li class="header-desktop">
+              <a href="mailto:sahalu.aminuk@gmail.com"
+                ><img src="./assets/images/mail_icon.svg" alt="Mail"
+              /></a>
+            </li>
+          </div>
         </ul>
       </nav>
     </header>
 
     <main>
-      <section class="headline">
+      <section class="headline" id="portfolio">
         <div class="headline-header">
           <h1>Sahalu Aminu</h1>
           <h2>Software Developer</h2>
@@ -32,8 +46,11 @@
         <div class="headline-supporting-text">
           <p>
             I can help you build a product , feature or website Look through
-            some of my work and experience! If you like what you see and have a
-            project you need coded, don't hesitate to contact me.
+            some of my work and experience!
+          </p>
+          <p class="headline-supporting-text-desktop">
+            If you like what you see and have a project you need coded, don't
+            hesitate to contact me.
           </p>
           <div class="divider">
             <hr />
@@ -41,40 +58,45 @@
         </div>
 
         <div class="headline-tech-stack">
-          <div class="headline-tech-stack-first">
-            <ul class="tech-stack">
-              <li class="tech-stack-header">Language</li>
-              <li>JavaScript</li>
-              <li>Ruby</li>
-              <li>HTML</li>
-              <li>CSS</li>
-            </ul>
+          <ul class="tech-stack">
+            <li class="tech-stack-header">Language</li>
+            <li>JavaScript</li>
+            <li>Ruby</li>
+            <li>HTML</li>
+            <li>CSS</li>
+          </ul>
 
-            <ul class="tech-stack">
-              <li class="tech-stack-header">Frameworks</li>
-              <li>Ruby on Rails</li>
-              <li>React</li>
-              <li>Rspec</li>
-              <li>Capybara</li>
-              <li>Sass</li>
-            </ul>
-          </div>
+          <ul class="tech-stack">
+            <li class="tech-stack-header">Frameworks</li>
+            <li>Ruby on Rails</li>
+            <li>React</li>
+            <li>Rspec</li>
+            <li>Capybara</li>
+            <li>Sass</li>
+          </ul>
 
           <ul class="tech-stack tech-stack-last">
             <li class="tech-stack-header">Skills</li>
+            <li>Version Control</li>
             <li>CLI</li>
             <li>GitHub</li>
+            <li>TDD</li>
             <li>API Design</li>
-            <li>Version Control</li>
-            <li>Database Management</li>
           </ul>
+        </div>
 
-          <div class="divider">
-            <hr />
-          </div>
+        <div class="divider headline-divider">
+          <hr />
         </div>
 
         <div class="headline-supporting-item">
+          <div
+            class="headline-supporting-item-text headline-supporting-item-text-desktop"
+          >
+            <p>Work</p>
+            <img src="assets/images/arrow_down.svg" alt="Down Arrow" />
+          </div>
+
           <div class="social-media">
             <ul>
               <li>
@@ -112,7 +134,7 @@
         </div>
       </section>
 
-      <section class="recent-works">
+      <section class="recent-works" id="about">
         <h2>My recent work</h2>
 
         <div class="divider">
@@ -122,9 +144,10 @@
         <div class="projects"></div>
       </section>
 
-      <section class="contact-us">
+      <section class="contact-us" id="contact">
         <div class="contact-us-text">
-          <h3>Contact us</h3>
+          <h3 class="contact-us-text-mobile">Contact us</h3>
+          <h3 class="contact-us-text-desktop">Let's chat!</h3>
           <p>
             If you have an application you are interested in developing, a
             feature that you need built or a project that needs coding. I'd love
@@ -137,24 +160,45 @@
               type="text"
               name="name"
               id="name"
+              class="contact-us-form-mobile"
               placeholder="Full Name"
               required
               minlength="3"
               maxlength="30"
             />
+            <div class="contact-us-form-desktop">
+              <input
+                type="text"
+                name="first name"
+                id="first_name"
+                placeholder="First Name"
+                required
+                minlength="3"
+                maxlength="15"
+              />
+              <input
+                type="text"
+                name="last name"
+                id="last_name"
+                placeholder="Last Name"
+                required
+                minlength="3"
+                maxlength="15"
+              />
+            </div>
             <input
               type="email"
               name="email"
               id="email"
-              placeholder="Your Email Address"
+              placeholder="Email Address"
               required
             />
             <textarea
               name="message"
               id="message"
-              cols="29"
-              rows="10"
-              placeholder="Enter text here"
+              cols="20"
+              rows="7"
+              placeholder="Write your message here"
               required
               maxlength="500"
             ></textarea>
@@ -169,37 +213,41 @@
         <hr />
       </div>
 
-      <div class="social-media footer-icons">
-        <ul>
-          <li>
-            <a href="https://github.com/sahlminkok"
-              ><img src="assets/images/github_icon.svg" alt="GitHub"
-            /></a>
-          </li>
-          <li>
-            <a href="https://www.linkedin.com/in/sahlminkok"
-              ><img src="assets/images/linkedin_icon.svg" alt="LinkedIn"
-            /></a>
-          </li>
-          <li>
-            <a href="https://wellfound.com/u/sahalu-aminu"
-              ><img src="assets/images/angelist_icon.svg" alt="Angelist"
-            /></a>
-          </li>
-          <li>
-            <a href="https://twitter.com/sahlminkok"
-              ><img src="assets/images/twitter_icon.svg" alt="Twitter"
-            /></a>
-          </li>
-          <li>
-            <a href="https://medium.com/@sahlminkok"
-              ><img src="assets/images/medium_icon.svg" alt="Medium"
-            /></a>
-          </li>
-        </ul>
-      </div>
+      <div class="footer-div">
+        <div class="social-media footer-icons">
+          <ul>
+            <li>
+              <a href="https://github.com/sahlminkok"
+                ><img src="assets/images/github_icon.svg" alt="GitHub"
+              /></a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/sahlminkok"
+                ><img src="assets/images/linkedin_icon.svg" alt="LinkedIn"
+              /></a>
+            </li>
+            <li>
+              <a href="https://wellfound.com/u/sahalu-aminu"
+                ><img src="assets/images/angelist_icon.svg" alt="Angelist"
+              /></a>
+            </li>
+            <li>
+              <a href="https://twitter.com/sahlminkok"
+                ><img src="assets/images/twitter_icon.svg" alt="Twitter"
+              /></a>
+            </li>
+            <li>
+              <a href="https://medium.com/@sahlminkok"
+                ><img src="assets/images/medium_icon.svg" alt="Medium"
+              /></a>
+            </li>
+          </ul>
+        </div>
 
-      <a href="mailto:sahalu.aminuk@gmail.com">sahalu.aminuk@gmail.com</a>
+        <a href="mailto:sahalu.aminuk@gmail.com" id="mail" class="footer-div-mail"
+          >sahalu.aminuk@gmail.com</a
+        >
+      </div>
 
       <div class="footer-home-indicator"></div>
     </footer>

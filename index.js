@@ -79,3 +79,16 @@ projectsData.forEach((projectData) => {
   project.appendChild(projectDetails);
   projects.appendChild(project);
 });
+
+// Responsive 'required' attributes for desktop and mobile name inputs
+
+const mobileName = document.querySelector('#name');
+const desktopFirst = document.querySelector('#first_name');
+const desktopLast = document.querySelector('#last_name');
+
+if (window.innerWidth >= 768) {
+  mobileName.removeAttribute('required');
+} else {
+  desktopFirst.removeAttribute('required');
+  desktopLast.removeAttribute('required');
+}

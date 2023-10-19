@@ -23,3 +23,19 @@
     width: 100%;
   }
 }
+
+@media screen and (min-width: 48em) {
+  .tech-stack {
+    width: 100% !important;
+
+    &-header {
+      font-size: 1.8rem;
+      font-weight: 700;
+      line-height: 29.333px;
+    }
+
+    li:not(:first-child) {
+      line-height: 28.444px;
+    }
+  }
+}
