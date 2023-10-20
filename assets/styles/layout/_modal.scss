@@ -92,3 +92,47 @@
     }
   }
 }
+
+@media screen and (min-width: 48em) {
+  .modal-section {
+    padding: 4% 8%;
+  }
+
+  .modal {
+    padding: 3rem;
+    gap: 4rem;
+    padding-bottom: 9rem;
+
+    &-title {
+      h3 {
+        font-size: 4rem;
+        line-height: 3.2rem;
+      }
+    }
+
+    &-text {
+      width: 50%;
+      margin: 0 auto;
+      gap: 4.5rem;
+
+      p {
+        line-height: 30px;
+      }
+
+      &-stack {
+        ul {
+          li {
+            border-right: 2px solid #81818C !important;
+          }
+        }
+      }
+    }
+
+    &-buttons {
+      flex-direction: row;
+      margin: 0 auto;
+      gap: 7.8rem;
+      padding-top: 2rem;
+    }
+  }
+}

@@ -511,3 +511,27 @@ body {
       letter-spacing: 0.36px; }
       .modal-buttons a:last-of-type {
         width: 45%; }
+
+@media screen and (min-width: 48em) {
+  .modal-section {
+    padding: 4% 8%; }
+  .modal {
+    padding: 3rem;
+    gap: 4rem;
+    padding-bottom: 9rem; }
+    .modal-title h3 {
+      font-size: 4rem;
+      line-height: 3.2rem; }
+    .modal-text {
+      width: 50%;
+      margin: 0 auto;
+      gap: 4.5rem; }
+      .modal-text p {
+        line-height: 30px; }
+      .modal-text-stack ul li {
+        border-right: 2px solid #81818C !important; }
+    .modal-buttons {
+      flex-direction: row;
+      margin: 0 auto;
+      gap: 7.8rem;
+      padding-top: 2rem; } }
