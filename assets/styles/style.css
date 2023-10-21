@@ -446,3 +446,100 @@ body {
       padding-left: 2rem; }
   .footer-home-indicator {
     display: none; } }
+
+.modal-section {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  width: 100%;
+  height: 100%;
+  padding: 6%;
+  backdrop-filter: blur(3rem);
+  background-color: rgba(21, 24, 89, 0.5);
+  display: none; }
+
+.modal {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+  background: rgba(255, 255, 255, 0.16);
+  padding: 2.4rem;
+  height: 100%;
+  overflow-y: auto;
+  margin-bottom: 2.4rem; }
+  .modal-title {
+    display: flex;
+    justify-content: space-between; }
+    .modal-title h3 {
+      font-size: 2rem;
+      font-weight: 500;
+      line-height: 2.8rem;
+      color: #fff;
+      padding: 1.5rem 0; }
+    .modal-title img {
+      width: 2.5rem;
+      align-self: flex-start;
+      margin: 0.8rem; }
+  .modal-image img {
+    width: 100%; }
+  .modal-image-desktop {
+    display: none; }
+  .modal-text {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.4rem; }
+    .modal-text p {
+      font-size: 1.6rem;
+      text-align: center;
+      line-height: 2.4rem;
+      color: #fff; }
+    .modal-text-stack ul li {
+      border-right: 1px solid #81818c !important; }
+      .modal-text-stack ul li:first-of-type {
+        border-left: 1px solid #81818c; }
+  .modal-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+    align-items: center; }
+    .modal-buttons a {
+      gap: 1.2rem;
+      padding: 1.2rem;
+      color: #fff;
+      width: 40%;
+      font-size: 1.2rem;
+      font-weight: 500;
+      line-height: 2.4rem;
+      letter-spacing: 0.36px; }
+      .modal-buttons a:last-of-type {
+        width: 45%; }
+
+@media screen and (min-width: 48em) {
+  .modal-section {
+    padding: 3% 8%; }
+  .modal {
+    padding: 3rem;
+    gap: 4rem;
+    padding-bottom: 9rem; }
+    .modal-title h3 {
+      font-size: 4rem;
+      line-height: 3.2rem; }
+    .modal-title img {
+      cursor: pointer; }
+    .modal-image-desktop {
+      display: block; }
+    .modal-image-mobile {
+      display: none; }
+    .modal-text {
+      width: 50%;
+      margin: 0 auto;
+      gap: 4.5rem; }
+      .modal-text p {
+        line-height: 30px; }
+    .modal-buttons {
+      flex-direction: row;
+      margin: 0 auto;
+      gap: 7.8rem;
+      padding-top: 2rem; } }
