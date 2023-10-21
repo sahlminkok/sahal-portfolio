@@ -69,6 +69,13 @@
         margin-top: 2rem;
       }
     }
+
+    &-error {
+      color: red;
+      font-size: 1.6rem;
+      align-self: flex-start;
+      margin-top: -1.2rem;
+    }
   }
 }
 

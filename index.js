@@ -182,3 +182,17 @@ const hide = () => {
 
 hamburger.addEventListener('click', display);
 cancel.addEventListener('click', hide);
+
+const form = document.querySelector('#form');
+
+const validateForm = (e) => {
+  const email = document.querySelector('#email');
+  const errorMessage = document.querySelector('.contact-us-form-error');
+  if (email.value !== email.value.toLowerCase()) {
+    e.preventDefault();
+    errorMessage.innerHTML = 'Please use only lowercase';
+  } else {
+    errorMessage.textContent = '';
+  }
+};
+form.addEventListener('submit', validateForm);
