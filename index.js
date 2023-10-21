@@ -14,7 +14,7 @@ const projectsData = [
     id: 2,
     imgSrc: ['./assets/images/placeholder.jpg', './assets/images/modal_placeholder.jpg'],
     imgAlt: 'placeholder',
-    heading: 'Multi-Post Stories',
+    heading: 'Multi-Post Lets change this',
     paragraph:
       "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.",
     stack: ['Css', 'Html', 'Bootstrap', 'Ruby'],
@@ -25,7 +25,7 @@ const projectsData = [
     id: 3,
     imgSrc: ['./assets/images/placeholder.jpg', './assets/images/modal_placeholder.jpg'],
     imgAlt: 'placeholder',
-    heading: 'Multi-Post Stories',
+    heading: 'Multi-Post Check in',
     paragraph:
       "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.",
     stack: ['Css', 'Html', 'Bootstrap', 'Ruby'],
@@ -147,7 +147,9 @@ seeProjectBtn.forEach((btn) => {
 
 modalSection.addEventListener('click', (event) => {
   if (event.target.id === 'cancel-modal') {
+    const modal = document.querySelector('.modal');
     modalSection.style.display = 'none';
+    modal.parentNode.removeChild(modal);
   }
 });
 
