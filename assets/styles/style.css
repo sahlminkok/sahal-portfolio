@@ -249,7 +249,7 @@ body {
   padding-top: 12.6rem;
   background-image: url("../../../assets/images/top_circles.svg");
   background-size: contain;
-  background-position: center 10%;
+  background-position: center 15%;
   background-repeat: no-repeat; }
   .headline-tech-stack {
     display: flex;
@@ -308,7 +308,7 @@ body {
   background-size: contain;
   background-repeat: no-repeat;
   background-position-x: center;
-  background-position-y: 20rem; }
+  background-position-y: 25rem; }
   .recent-works h2 {
     font-size: 4rem;
     font-weight: 500;
