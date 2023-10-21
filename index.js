@@ -192,7 +192,7 @@ const validateForm = (e) => {
     e.preventDefault();
     errorMessage.innerHTML = 'Please use only lowercase';
   } else {
-    errorMessage.innerHTML = '';
+    errorMessage.textContent = '';
   }
 };
 form.addEventListener('submit', validateForm);
