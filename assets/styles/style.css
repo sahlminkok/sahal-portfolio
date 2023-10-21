@@ -27,13 +27,13 @@ body {
 .headline {
   text-align: center; }
   .headline-header h1 {
-    font-size: 4rem;
+    font-size: 5rem;
     font-weight: 700;
     color: #7d73fc;
     letter-spacing: 0.37px;
     line-height: 7.2rem; }
   .headline-header h2 {
-    font-size: 3.2rem;
+    font-size: 3rem;
     font-weight: 500;
     color: #edecff; }
   .headline-supporting-text {
@@ -169,7 +169,7 @@ body {
   justify-content: center;
   background-color: #151859;
   background-image: url(../../../assets/images/mobile_menu_background.svg);
-  background-size: cover;
+  background-size: contain;
   background-position: center bottom;
   background-repeat: no-repeat;
   height: 100vh;
@@ -213,7 +213,11 @@ body {
   padding: 2.5rem 10%;
   align-items: center;
   color: #edecff;
-  box-shadow: 0 2px 4px rgba(125, 115, 252, 0.2); }
+  box-shadow: 0 2px 4px rgba(125, 115, 252, 0.2);
+  position: fixed;
+  width: 100%;
+  z-index: 99;
+  background-color: #151859; }
 
 @media screen and (min-width: 48em) {
   .header nav ul {
@@ -242,10 +246,10 @@ body {
 
 .headline {
   padding: 0 2.4rem;
-  padding-top: 4.7rem;
+  padding-top: 12.6rem;
   background-image: url("../../../assets/images/top_circles.svg");
   background-size: contain;
-  background-position: top;
+  background-position: center 10%;
   background-repeat: no-repeat; }
   .headline-tech-stack {
     display: flex;
@@ -275,7 +279,7 @@ body {
     align-items: center;
     background-image: url(../../../assets/images/top_circles_desktop.svg);
     background-position: center 30%;
-    padding: 11.4rem 10%; }
+    padding: 19rem 10%; }
     .headline-supporting-text {
       padding-top: 8.8rem;
       width: 40%; }
@@ -382,7 +386,8 @@ body {
         border: none;
         padding: 1.2rem 1.5rem;
         color: #edecff;
-        cursor: pointer; }
+        cursor: pointer;
+        margin-top: 2rem; }
 
 @media screen and (min-width: 48em) {
   .contact-us {

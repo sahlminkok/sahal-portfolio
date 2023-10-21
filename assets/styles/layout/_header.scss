@@ -4,7 +4,7 @@
     justify-content: center;
     background-color: $color-primary;
     background-image: url(../../../assets/images/mobile_menu_background.svg);
-    background-size: cover;
+    background-size: contain;
     background-position: center bottom;
     background-repeat: no-repeat;
     height: 100vh;
@@ -64,6 +64,10 @@
       align-items: center;
       color: $color-primary-4;
       box-shadow: 0 2px 4px rgba($color-primary-2, 0.2);
+      position: fixed;
+      width: 100%;
+      z-index: 99;
+      background-color: $color-primary;
     }
   }
 }
