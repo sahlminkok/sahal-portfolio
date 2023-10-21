@@ -1,39 +1,47 @@
 const projectsData = [
   {
-    imgSrc: './assets/images/placeholder.jpg',
+    id: 1,
+    imgSrc: ['./assets/images/placeholder.jpg', './assets/images/modal_placeholder.jpg'],
     imgAlt: 'placeholder',
     heading: 'Multi-Post Stories',
     paragraph:
       "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.",
     stack: ['Css', 'Html', 'Bootstrap', 'Ruby'],
     link: '',
+    source: '',
   },
   {
-    imgSrc: './assets/images/placeholder.jpg',
+    id: 2,
+    imgSrc: ['./assets/images/placeholder.jpg', './assets/images/modal_placeholder.jpg'],
     imgAlt: 'placeholder',
     heading: 'Multi-Post Stories',
     paragraph:
       "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.",
     stack: ['Css', 'Html', 'Bootstrap', 'Ruby'],
     link: '',
+    source: '',
   },
   {
-    imgSrc: './assets/images/placeholder.jpg',
+    id: 3,
+    imgSrc: ['./assets/images/placeholder.jpg', './assets/images/modal_placeholder.jpg'],
     imgAlt: 'placeholder',
     heading: 'Multi-Post Stories',
     paragraph:
       "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.",
     stack: ['Css', 'Html', 'Bootstrap', 'Ruby'],
     link: '',
+    source: '',
   },
   {
-    imgSrc: './assets/images/placeholder.jpg',
+    id: 4,
+    imgSrc: ['./assets/images/placeholder.jpg', './assets/images/modal_placeholder.jpg'],
     imgAlt: 'placeholder',
     heading: 'Multi-Post Stories',
     paragraph:
       "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.",
     stack: ['Css', 'Html', 'Bootstrap', 'Ruby'],
     link: '',
+    source: '',
   },
 ];
 
@@ -42,9 +50,11 @@ const projects = document.querySelector('.projects');
 projectsData.forEach((projectData) => {
   const project = document.createElement('div');
   project.className = 'project';
+  project.id = projectData.id;
 
   const img = document.createElement('img');
-  img.src = projectData.imgSrc;
+  const [projectImgSrc] = projectData.imgSrc;
+  img.src = projectImgSrc;
   img.alt = projectData.imgAlt;
   project.appendChild(img);
 
@@ -72,12 +82,73 @@ projectsData.forEach((projectData) => {
 
   const a = document.createElement('a');
   a.className = 'btn';
-  a.href = projectData.link;
+  a.href = `#${projectData.id}`;
   a.textContent = 'See Project';
+  a.classList.add('see-project');
+  a.setAttribute('data-project-id', projectData.id);
   projectDetails.appendChild(a);
 
   project.appendChild(projectDetails);
   projects.appendChild(project);
+});
+
+// Creating a modal for each project
+
+const modalSection = document.querySelector('.modal-section');
+const seeProjectBtn = document.querySelectorAll('.see-project');
+
+seeProjectBtn.forEach((btn) => {
+  btn.addEventListener('click', (e) => {
+    const projectId = e.currentTarget.getAttribute('data-project-id');
+    const project = projectsData.find(
+      (item) => item.id === parseInt(projectId, 10),
+    );
+
+    const modal = document.createElement('div');
+    modal.className = 'modal';
+
+    modal.innerHTML = `
+                        <div class="modal-title">
+                          <h3>${project.heading}</h3>
+                          <img src="assets/images/cancel_icon.svg" id="cancel-modal" alt="Cancel Icon" />
+                        </div>
+
+                        <div class="modal-image">
+                          <img class="modal-image-desktop" src="${project.imgSrc[1]}" alt="${project.imgAlt}" />
+                          <img class="modal-image-mobile" src="${project.imgSrc[0]}" alt="${project.imgAlt}" />
+                        </div>
+
+                        <div class="modal-text">
+                          <p>${project.paragraph}</p>
+
+                          <div class="stack modal-text-stack">
+                            <ul>
+                              ${project.stack.map((i) => `<li>${i}</li>`).join('')}
+                            </ul>
+                          </div>
+                        </div>
+
+                        <div class="modal-buttons">
+                          <a href="${project.link}" class="btn">
+                            See live
+                            <img src="assets/images/live_icon.svg" alt="Live Icon" />
+                          </a>
+                          <a href="${project.source}" class="btn">
+                            See live
+                            <img src="assets/images/github_icon.svg" alt="Live Icon" />
+                          </a>
+                        </div>
+                      `;
+
+    modalSection.appendChild(modal);
+    modalSection.style.display = 'block';
+  });
+});
+
+modalSection.addEventListener('click', (event) => {
+  if (event.target.id === 'cancel-modal') {
+    modalSection.style.display = 'none';
+  }
 });
 
 // Responsive 'required' attributes for desktop and mobile name inputs
