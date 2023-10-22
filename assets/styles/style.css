@@ -98,7 +98,7 @@ body {
   .project-image {
     width: 100%; }
     .project-image img {
-      width: auto; }
+      width: 100%; }
   .project-details {
     display: flex;
     flex-direction: column;
@@ -126,10 +126,12 @@ body {
       width: 250%; }
       .project-image img {
         width: 100%; }
-    .project-details h3 {
-      font-size: 4rem;
-      font-weight: 700;
-      line-height: 5.2rem; } }
+    .project-details {
+      width: 170%; }
+      .project-details h3 {
+        font-size: 4rem;
+        font-weight: 700;
+        line-height: 5.2rem; } }
 
 .stack ul {
   list-style: none;

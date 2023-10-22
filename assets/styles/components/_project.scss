@@ -8,7 +8,7 @@
     width: 100%;
 
     img {
-      width: auto;
+      width: 100%;
     }
   }
 
@@ -55,6 +55,8 @@
     }
 
     &-details {
+      width: 170%;
+
       h3 {
         font-size: 4rem;
         font-weight: 700;
