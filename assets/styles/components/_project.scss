@@ -4,8 +4,12 @@
   gap: 2.4rem;
   transition: all 0.2s;
 
-  img {
+  &-image {
     width: 100%;
+
+    img {
+      width: auto;
+    }
   }
 
   &-details {
@@ -42,8 +46,12 @@
       flex-direction: row-reverse;
     }
 
-    img {
+    &-image {
       width: 250%;
+
+      img {
+        width: 100%;
+      }
     }
 
     &-details {
