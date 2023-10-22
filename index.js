@@ -1,7 +1,10 @@
 const projectsData = [
   {
     id: 1,
-    imgSrc: ['./assets/images/placeholder.jpg', './assets/images/modal_placeholder.jpg'],
+    imgSrc: [
+      './assets/images/placeholder.jpg',
+      './assets/images/modal_placeholder.jpg',
+    ],
     heading: 'Multi-Post Stories',
     paragraph:
       "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.",
@@ -12,7 +15,10 @@ const projectsData = [
   },
   {
     id: 2,
-    imgSrc: ['./assets/images/placeholder.jpg', './assets/images/modal_placeholder.jpg'],
+    imgSrc: [
+      './assets/images/placeholder.jpg',
+      './assets/images/modal_placeholder.jpg',
+    ],
     heading: 'Multi-Post Lets change this',
     paragraph:
       "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.",
@@ -23,22 +29,30 @@ const projectsData = [
   },
   {
     id: 3,
-    imgSrc: ['./assets/images/placeholder.jpg', './assets/images/modal_placeholder.jpg'],
-    heading: 'Multi-Post Check in',
+    imgSrc: [
+      './assets/images/crypto-metrics.jpg',
+      './assets/images/modal_crypto-metrics.jpg',
+    ],
+    heading: 'Crypto Metrics',
     paragraph:
-      "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.",
-    modal_para: '',
-    stack: ['Css', 'Html', 'Bootstrap', 'Ruby'],
-    link: '',
-    source: '',
+      'Crypto Metrics is a powerful tool for cryptocurrency enthusiasts, simplifying access to essential market data. Whether users seek specific coin details or a broader market overview, Crypto Metrics empowers them to make informed decisions swiftly.',
+    modal_para:
+      'Crypto Metrics is a streamlined and user-friendly single-page web application designed to provide up-to-date information on a wide range of cryptocurrency coins. This application offers a simple and efficient way for users to access current market data for various cryptocurrencies, as well as search and filter coins based on their names or symbols.',
+    stack: ['React', 'Redux Toolkit', 'Css'],
+    link: 'https://cryptometrics-qhlg.onrender.com',
+    source: 'https://github.com/sahlminkok/CryptoMetrics',
   },
   {
     id: 4,
-    imgSrc: ['./assets/images/space-traveler\'s-hub.jpg', './assets/images/modal_space-traveler\'s-hub.jpg'],
-    heading: 'Space Travelers\' Hub',
+    imgSrc: [
+      "./assets/images/space-traveler's-hub.jpg",
+      "./assets/images/modal_space-traveler's-hub.jpg",
+    ],
+    heading: "Space Travelers' Hub",
     paragraph:
       'Space Travelers Hub is a web application for a company that provides commercial and scientific space travel services. The application will allow users to book rockets and join selected space missions.',
-    modal_para: 'Space Travelers Hub is an innovative web application designed to cater to the evolving demand for commercial and scientific space travel services. Leveraging the power of React and Redux Toolkit, this platform serves as a one-stop destination for space enthusiasts, researchers, and explorers, providing them with a seamless and immersive experience.',
+    modal_para:
+      'Space Travelers Hub is an innovative web application designed to cater to the evolving demand for commercial and scientific space travel services. Leveraging the power of React and Redux Toolkit, this platform serves as a one-stop destination for space enthusiasts, researchers, and explorers, providing them with a seamless and immersive experience.',
     stack: ['React', 'Redux', 'Bootstrap'],
     link: 'https://space-travellers-hub-app.onrender.com/',
     source: 'https://github.com/sahlminkok/space_travelers_hub',
@@ -117,8 +131,12 @@ seeProjectBtn.forEach((btn) => {
                         </div>
 
                         <div class="modal-image">
-                          <img class="modal-image-desktop" src="${project.imgSrc[1]}" alt="${project.imgAlt}" />
-                          <img class="modal-image-mobile" src="${project.imgSrc[0]}" alt="${project.imgAlt}" />
+                          <img class="modal-image-desktop" src="${
+  project.imgSrc[1]
+}" alt="${project.imgAlt}" />
+                          <img class="modal-image-mobile" src="${
+  project.imgSrc[0]
+}" alt="${project.imgAlt}" />
                         </div>
 
                         <div class="modal-text">
@@ -126,7 +144,9 @@ seeProjectBtn.forEach((btn) => {
 
                           <div class="stack modal-text-stack">
                             <ul>
-                              ${project.stack.map((i) => `<li>${i}</li>`).join('')}
+                              ${project.stack
+    .map((i) => `<li>${i}</li>`)
+    .join('')}
                             </ul>
                           </div>
                         </div>
@@ -136,7 +156,9 @@ seeProjectBtn.forEach((btn) => {
                             See live
                             <img src="assets/images/live_icon.svg" alt="Live Icon" />
                           </a>
-                          <a href="${project.source}" target="_blank" class="btn">
+                          <a href="${
+  project.source
+}" target="_blank" class="btn">
                             See live
                             <img src="assets/images/github_icon.svg" alt="Live Icon" />
                           </a>
