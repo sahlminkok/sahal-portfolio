@@ -2,10 +2,10 @@ const projectsData = [
   {
     id: 1,
     imgSrc: ['./assets/images/placeholder.jpg', './assets/images/modal_placeholder.jpg'],
-    imgAlt: 'placeholder',
     heading: 'Multi-Post Stories',
     paragraph:
       "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.",
+    modal_para: '',
     stack: ['Css', 'Html', 'Bootstrap', 'Ruby'],
     link: '',
     source: '',
@@ -13,10 +13,10 @@ const projectsData = [
   {
     id: 2,
     imgSrc: ['./assets/images/placeholder.jpg', './assets/images/modal_placeholder.jpg'],
-    imgAlt: 'placeholder',
     heading: 'Multi-Post Lets change this',
     paragraph:
       "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.",
+    modal_para: '',
     stack: ['Css', 'Html', 'Bootstrap', 'Ruby'],
     link: '',
     source: '',
@@ -24,24 +24,24 @@ const projectsData = [
   {
     id: 3,
     imgSrc: ['./assets/images/placeholder.jpg', './assets/images/modal_placeholder.jpg'],
-    imgAlt: 'placeholder',
     heading: 'Multi-Post Check in',
     paragraph:
       "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.",
+    modal_para: '',
     stack: ['Css', 'Html', 'Bootstrap', 'Ruby'],
     link: '',
     source: '',
   },
   {
     id: 4,
-    imgSrc: ['./assets/images/placeholder.jpg', './assets/images/modal_placeholder.jpg'],
-    imgAlt: 'placeholder',
-    heading: 'Multi-Post Stories',
+    imgSrc: ['./assets/images/space-traveler\'s-hub.jpg', './assets/images/modal_space-traveler\'s-hub.jpg'],
+    heading: 'Space Travelers\' Hub',
     paragraph:
-      "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.",
-    stack: ['Css', 'Html', 'Bootstrap', 'Ruby'],
-    link: '',
-    source: '',
+      'Space Travelers Hub is a web application for a company that provides commercial and scientific space travel services. The application will allow users to book rockets and join selected space missions.',
+    modal_para: 'Space Travelers Hub is an innovative web application designed to cater to the evolving demand for commercial and scientific space travel services. Leveraging the power of React and Redux Toolkit, this platform serves as a one-stop destination for space enthusiasts, researchers, and explorers, providing them with a seamless and immersive experience.',
+    stack: ['React', 'Redux', 'Bootstrap'],
+    link: 'https://space-travellers-hub-app.onrender.com/',
+    source: 'https://github.com/sahlminkok/space_travelers_hub',
   },
 ];
 
@@ -52,11 +52,14 @@ projectsData.forEach((projectData) => {
   project.className = 'project';
   project.id = projectData.id;
 
+  const imgDiv = document.createElement('div');
+  imgDiv.className = 'project-image';
   const img = document.createElement('img');
   const [projectImgSrc] = projectData.imgSrc;
   img.src = projectImgSrc;
-  img.alt = projectData.imgAlt;
-  project.appendChild(img);
+  img.alt = projectData.heading;
+  imgDiv.appendChild(img);
+  project.appendChild(imgDiv);
 
   const projectDetails = document.createElement('div');
   projectDetails.className = 'project-details';
@@ -119,7 +122,7 @@ seeProjectBtn.forEach((btn) => {
                         </div>
 
                         <div class="modal-text">
-                          <p>${project.paragraph}</p>
+                          <p>${project.modal_para}</p>
 
                           <div class="stack modal-text-stack">
                             <ul>
@@ -129,11 +132,11 @@ seeProjectBtn.forEach((btn) => {
                         </div>
 
                         <div class="modal-buttons">
-                          <a href="${project.link}" class="btn">
+                          <a href="${project.link}" target="_blank" class="btn">
                             See live
                             <img src="assets/images/live_icon.svg" alt="Live Icon" />
                           </a>
-                          <a href="${project.source}" class="btn">
+                          <a href="${project.source}" target="_blank" class="btn">
                             See live
                             <img src="assets/images/github_icon.svg" alt="Live Icon" />
                           </a>

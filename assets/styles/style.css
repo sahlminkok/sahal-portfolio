@@ -95,8 +95,10 @@ body {
   flex-direction: column;
   gap: 2.4rem;
   transition: all 0.2s; }
-  .project img {
+  .project-image {
     width: 100%; }
+    .project-image img {
+      width: auto; }
   .project-details {
     display: flex;
     flex-direction: column;
@@ -120,8 +122,10 @@ body {
     align-items: center; }
     .project:nth-child(2n) {
       flex-direction: row-reverse; }
-    .project img {
+    .project-image {
       width: 250%; }
+      .project-image img {
+        width: 100%; }
     .project-details h3 {
       font-size: 4rem;
       font-weight: 700;
