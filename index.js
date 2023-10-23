@@ -16,16 +16,17 @@ const projectsData = [
   {
     id: 2,
     imgSrc: [
-      './assets/images/placeholder.jpg',
-      './assets/images/modal_placeholder.jpg',
+      './assets/images/smart-budget.jpg',
+      './assets/images/modal_smart-budget.jpg',
     ],
-    heading: 'Multi-Post Lets change this',
+    heading: 'Smart Budget',
     paragraph:
-      "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.",
-    modal_para: '',
-    stack: ['Css', 'Html', 'Bootstrap', 'Ruby'],
-    link: '',
-    source: '',
+      'Smart Budget, a cutting-edge Rails web app, simplifies budget management. Take control of your finances, track expenses, categorize transactions, and gain insights into your spending habits.',
+    modal_para:
+      'Smart Budget, a feature-rich Ruby on Rails web application, simplifies budget management by providing expense tracking, categorization, insights, and customizable budgeting to empower users on their path to financial success. 💡💸',
+    stack: ['Html', 'Ruby on Rails', 'Sass'],
+    link: 'https://smartbudget-mhwp.onrender.com/',
+    source: 'https://github.com/sahlminkok/smart-budget',
   },
   {
     id: 3,
@@ -35,7 +36,7 @@ const projectsData = [
     ],
     heading: 'Crypto Metrics',
     paragraph:
-      'Crypto Metrics is a powerful tool for cryptocurrency enthusiasts, simplifying access to essential market data. Whether users seek specific coin details or a broader market overview, Crypto Metrics empowers them to make informed decisions swiftly.',
+      'Crypto Metrics is a mobile web app for cryptocurrency enthusiasts, simplifying access to essential market data. Whether users seek specific coin details or a broader market overview, Crypto Metrics empowers them to make informed decisions swiftly.',
     modal_para:
       'Crypto Metrics is a streamlined and user-friendly single-page web application designed to provide up-to-date information on a wide range of cryptocurrency coins. This application offers a simple and efficient way for users to access current market data for various cryptocurrencies, as well as search and filter coins based on their names or symbols.',
     stack: ['React', 'Redux Toolkit', 'Css'],
