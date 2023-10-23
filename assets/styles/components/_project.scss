@@ -48,9 +48,14 @@
 
     &-image {
       width: 250%;
+      transition: all 0.3s ease;
 
       img {
         width: 100%;
+      }
+
+      &:hover {
+        transform: translateY(1rem);
       }
     }
 
