@@ -167,6 +167,11 @@ seeProjectBtn.forEach((btn) => {
                       `;
 
     modalSection.appendChild(modal);
+
+    setTimeout(() => {
+      modal.classList.add('modal-show');
+    }, 0);
+
     modalSection.style.display = 'block';
   });
 });
@@ -174,8 +179,13 @@ seeProjectBtn.forEach((btn) => {
 modalSection.addEventListener('click', (event) => {
   if (event.target.id === 'cancel-modal') {
     const modal = document.querySelector('.modal');
-    modalSection.style.display = 'none';
-    modal.parentNode.removeChild(modal);
+
+    modal.classList.add('modal-hide');
+
+    modal.addEventListener('transitionend', () => {
+      modalSection.style.display = 'none';
+      modal.parentNode.removeChild(modal);
+    });
   }
 });
 
