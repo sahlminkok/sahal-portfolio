@@ -132,12 +132,8 @@ seeProjectBtn.forEach((btn) => {
                         </div>
 
                         <div class="modal-image">
-                          <img class="modal-image-desktop" src="${
-  project.imgSrc[1]
-}" alt="${project.imgAlt}" />
-                          <img class="modal-image-mobile" src="${
-  project.imgSrc[0]
-}" alt="${project.imgAlt}" />
+                          <img class="modal-image-desktop" src="${project.imgSrc[1]}" alt="${project.imgAlt}" />
+                          <img class="modal-image-mobile" src="${project.imgSrc[0]}" alt="${project.imgAlt}" />
                         </div>
 
                         <div class="modal-text">
@@ -145,9 +141,7 @@ seeProjectBtn.forEach((btn) => {
 
                           <div class="stack modal-text-stack">
                             <ul>
-                              ${project.stack
-    .map((i) => `<li>${i}</li>`)
-    .join('')}
+                              ${project.stack.map((i) => `<li>${i}</li>`).join('')}
                             </ul>
                           </div>
                         </div>
@@ -157,9 +151,7 @@ seeProjectBtn.forEach((btn) => {
                             See live
                             <img src="assets/images/live_icon.svg" alt="Live Icon" />
                           </a>
-                          <a href="${
-  project.source
-}" target="_blank" class="btn">
+                          <a href="${project.source}" target="_blank" class="btn">
                             See live
                             <img src="assets/images/github_icon.svg" alt="Live Icon" />
                           </a>

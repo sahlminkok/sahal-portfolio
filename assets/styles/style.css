@@ -6,7 +6,8 @@
   box-sizing: inherit; }
 
 html {
-  font-size: 62.5%; }
+  font-size: 62.5%;
+  scroll-behavior: smooth; }
 
 body {
   box-sizing: border-box;
@@ -178,7 +179,7 @@ body {
   justify-content: center;
   background-color: #151859;
   background-image: url(../../../assets/images/mobile_menu_background.svg);
-  background-size: contain;
+  background-size: cover;
   background-position: center bottom;
   background-repeat: no-repeat;
   height: 100vh;
