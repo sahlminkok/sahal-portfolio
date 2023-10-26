@@ -4,8 +4,12 @@
   gap: 2.4rem;
   transition: all 0.2s;
 
-  img {
+  &-image {
     width: 100%;
+
+    img {
+      width: 100%;
+    }
   }
 
   &-details {
@@ -42,11 +46,22 @@
       flex-direction: row-reverse;
     }
 
-    img {
+    &-image {
       width: 250%;
+      transition: all 0.3s ease;
+
+      img {
+        width: 100%;
+      }
+
+      &:hover {
+        transform: translateY(1rem);
+      }
     }
 
     &-details {
+      width: 170%;
+
       h3 {
         font-size: 4rem;
         font-weight: 700;
