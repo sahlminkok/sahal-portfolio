@@ -2,16 +2,16 @@ const projectsData = [
   {
     id: 1,
     imgSrc: [
-      './assets/images/placeholder.jpg',
-      './assets/images/modal_placeholder.jpg',
+      './assets/images/hotel-hub.jpg',
+      './assets/images/modal_hotel-hub.jpg',
     ],
-    heading: 'Multi-Post Stories',
+    heading: 'Hotel Hub',
     paragraph:
-      "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.",
-    modal_para: '',
-    stack: ['Css', 'Html', 'Bootstrap', 'Ruby'],
-    link: '',
-    source: '',
+      "Hotel Hub is a Rails and React application, streamlines hotel booking by providing a visually appealing selection of available rooms on the homepage and a comprehensive room list under the 'reserve' menu for convenient reservations.",
+    modal_para: "Hotel Hub is a seamlessly integrated Rails and React web application that simplifies the hotel booking experience, offering travelers a user-friendly platform to explore, select, and reserve accommodations. On the website's home page, you'll find a visually appealing list of available rooms, and with the 'reserve' menu, you can easily access the complete catalog of available rooms for a hassle-free booking process.",
+    stack: ['React', 'Rails', 'Sass', 'PostgreSQL'],
+    link: 'https://hotel-hub-app.onrender.com',
+    source: 'https://github.com/sahlminkok/hotel-hub-frontend',
   },
   {
     id: 2,
@@ -24,7 +24,7 @@ const projectsData = [
       'Smart Budget, a cutting-edge Rails web app, simplifies budget management. Take control of your finances, track expenses, categorize transactions, and gain insights into your spending habits.',
     modal_para:
       'Smart Budget, a feature-rich Ruby on Rails web application, simplifies budget management by providing expense tracking, categorization, insights, and customizable budgeting to empower users on their path to financial success. 💡💸',
-    stack: ['Html', 'Ruby on Rails', 'Sass'],
+    stack: ['Html', 'Rails', 'Sass', 'PostgreSQL'],
     link: 'https://smartbudget-mhwp.onrender.com/',
     source: 'https://github.com/sahlminkok/smart-budget',
   },
