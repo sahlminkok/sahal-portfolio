@@ -8,7 +8,8 @@ const projectsData = [
     heading: 'Hotel Hub',
     paragraph:
       "Hotel Hub is a Rails and React application, streamlines hotel booking by providing a visually appealing selection of available rooms on the homepage and a comprehensive room list under the 'reserve' menu for convenient reservations.",
-    modal_para: "Hotel Hub is a seamlessly integrated Rails and React web application that simplifies the hotel booking experience, offering travelers a user-friendly platform to explore, select, and reserve accommodations. On the website's home page, you'll find a visually appealing list of available rooms, and with the 'reserve' menu, you can easily access the complete catalog of available rooms for a hassle-free booking process.",
+    modal_para:
+      "Hotel Hub is a seamlessly integrated Rails and React web application that simplifies the hotel booking experience, offering travelers a user-friendly platform to explore, select, and reserve accommodations. On the website's home page, you'll find a visually appealing list of available rooms, and with the 'reserve' menu, you can easily access the complete catalog of available rooms for a hassle-free booking process.",
     stack: ['React', 'Rails', 'Sass', 'PostgreSQL'],
     link: 'https://hotel-hub-app.onrender.com',
     source: 'https://github.com/sahlminkok/hotel-hub-frontend',
@@ -17,7 +18,7 @@ const projectsData = [
     id: 2,
     imgSrc: [
       './assets/images/smart-budget.jpg',
-      './assets/images/modal_smart-budget.jpg',
+      './assets/images/modal_smart-budget2.jpg',
     ],
     heading: 'Smart Budget',
     paragraph:
@@ -132,8 +133,12 @@ seeProjectBtn.forEach((btn) => {
                         </div>
 
                         <div class="modal-image">
-                          <img class="modal-image-desktop" src="${project.imgSrc[1]}" alt="${project.imgAlt}" />
-                          <img class="modal-image-mobile" src="${project.imgSrc[0]}" alt="${project.imgAlt}" />
+                          <img class="modal-image-desktop" src="${
+  project.imgSrc[1]
+}" alt="${project.imgAlt}" />
+                          <img class="modal-image-mobile" src="${
+  project.imgSrc[0]
+}" alt="${project.imgAlt}" />
                         </div>
 
                         <div class="modal-text">
@@ -141,7 +146,9 @@ seeProjectBtn.forEach((btn) => {
 
                           <div class="stack modal-text-stack">
                             <ul>
-                              ${project.stack.map((i) => `<li>${i}</li>`).join('')}
+                              ${project.stack
+    .map((i) => `<li>${i}</li>`)
+    .join('')}
                             </ul>
                           </div>
                         </div>
@@ -151,7 +158,9 @@ seeProjectBtn.forEach((btn) => {
                             See live
                             <img src="assets/images/live_icon.svg" alt="Live Icon" />
                           </a>
-                          <a href="${project.source}" target="_blank" class="btn">
+                          <a href="${
+  project.source
+}" target="_blank" class="btn">
                             See live
                             <img src="assets/images/github_icon.svg" alt="Live Icon" />
                           </a>
