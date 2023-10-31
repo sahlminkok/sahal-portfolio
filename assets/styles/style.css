@@ -178,6 +178,23 @@ body {
   .btn:disabled {
     background-color: #000; }
 
+::-webkit-scrollbar {
+  width: 10px; }
+
+::-webkit-scrollbar-track {
+  background: #fff;
+  border-radius: 10px; }
+
+::-webkit-scrollbar-track:hover {
+  background: #151859; }
+
+::-webkit-scrollbar-thumb {
+  background: #151859;
+  border-radius: 10px; }
+
+::-webkit-scrollbar-thumb:hover {
+  background: #fff; }
+
 .header-mobile {
   display: flex;
   justify-content: center;
