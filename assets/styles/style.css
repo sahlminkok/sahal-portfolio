@@ -179,21 +179,17 @@ body {
     background-color: #000; }
 
 ::-webkit-scrollbar {
-  width: 10px; }
+  width: 3px; }
 
 ::-webkit-scrollbar-track {
+  background: transparent; }
+
+::-webkit-scrollbar-thumb {
   background: #fff;
   border-radius: 10px; }
 
-::-webkit-scrollbar-track:hover {
-  background: #151859; }
-
-::-webkit-scrollbar-thumb {
-  background: #151859;
-  border-radius: 10px; }
-
 ::-webkit-scrollbar-thumb:hover {
-  background: #fff; }
+  background: #a2a3ae; }
 
 .header-mobile {
   display: flex;
