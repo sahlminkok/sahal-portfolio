@@ -6,10 +6,27 @@
   background-position: center 15%;
   background-repeat: no-repeat;
 
+  &-header {
+    h1 {
+      animation: moveInLeft 1s ease-in-out;
+    }
+
+    h2 {
+      animation: moveInRight 1s ease-in-out;
+    }
+  }
+
+  &-supporting-text {
+    animation: moveInBottom 0.5s ease-out 0.75s;
+    animation-fill-mode: backwards;
+  }
+
   &-tech-stack {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    animation: moveInBottom 0.5s ease-out 0.75s;
+    animation-fill-mode: backwards;
   }
 
   &-supporting-item {
