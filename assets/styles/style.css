@@ -23,7 +23,7 @@ body {
   font-weight: 500;
   line-height: 1.6rem;
   letter-spacing: 0.6px;
-  font-family: 'Pacifico', cursive; }
+  font-family: "Pacifico", cursive; }
 
 .headline {
   text-align: center; }
@@ -346,8 +346,7 @@ body {
     background-position: center 30%;
     padding: 19rem 10%; }
     .headline-supporting-text {
-      padding-top: 8.8rem;
-      width: 40%; }
+      width: 45%; }
       .headline-supporting-text-desktop {
         padding-top: 3rem; }
     .headline-tech-stack {
@@ -355,10 +354,10 @@ body {
       flex-wrap: nowrap;
       justify-content: space-between;
       margin: 0 auto;
-      width: 40%;
+      width: 45%;
       padding-top: 1rem; }
     .headline-divider {
-      width: 40%; }
+      width: 45%; }
     .headline-supporting-item {
       flex-direction: row;
       justify-content: space-around;
