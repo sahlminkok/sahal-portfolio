@@ -123,9 +123,9 @@ You can deploy this project using:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] Contact form
-- [ ] Desktop Version
-- [ ] Application deploy
+- [ ] Dark/Light Mode Toggle
+- [ ] Testimonials Section
+- [ ] Blog or Articles Section
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -148,7 +148,7 @@ If you like this project Just give it a star.
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
 
-I would like to thank Microverse.
+I would like to thank Microverse for their design inspiration.
 
 <!-- LICENSE -->
 
