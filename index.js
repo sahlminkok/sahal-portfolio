@@ -2,6 +2,21 @@ const projectsData = [
   {
     id: 1,
     imgSrc: [
+      './assets/images/yrtalent_projects.jpg',
+      './assets/images/modal_yrtalent.jpg',
+    ],
+    heading: 'YR Talent',
+    paragraph:
+      'YR Talent is an international talent-matching platform that showcases projects and global talent, allowing users to apply for career and collaboration opportunities in China. Key features include project and application tracking, a detailed talent portfolio, and a secure admin panel for efficient management.',
+    modal_para:
+      'YR Talent is an international platform that connects PhD holders and skilled professionals with career and collaboration opportunities in China. Featuring a dynamic interface, it allows users to explore projects, apply to roles, and manage their applications. The platform also includes a secure admin panel for streamlined talent and project oversight, making it an efficient hub for global talent matching.',
+    stack: ['HTML5', 'Rails', 'SCSS', 'PostgreSQL'],
+    link: 'https://yrtalent.cn',
+    source: 'https://github.com/sahlminkok/yrtalent',
+  },
+  {
+    id: 2,
+    imgSrc: [
       './assets/images/hotel-hub.jpg',
       './assets/images/modal_hotel-hub.jpg',
     ],
@@ -10,12 +25,12 @@ const projectsData = [
       "Hotel Hub is a Rails and React application, streamlines hotel booking by providing a visually appealing selection of available rooms on the homepage and a comprehensive room list under the 'reserve' menu for convenient reservations.",
     modal_para:
       "Hotel Hub is a seamlessly integrated Rails and React web application that simplifies the hotel booking experience, offering travelers a user-friendly platform to explore, select, and reserve accommodations. On the website's home page, you'll find a visually appealing list of available rooms, and with the 'reserve' menu, you can easily access the complete catalog of available rooms for a hassle-free booking process.",
-    stack: ['React', 'Rails', 'Sass', 'PostgreSQL'],
+    stack: ['React', 'Rails', 'SCSS', 'PostgreSQL'],
     link: 'https://hotel-hub-app.onrender.com',
     source: 'https://github.com/sahlminkok/hotel-hub-frontend',
   },
   {
-    id: 2,
+    id: 3,
     imgSrc: [
       './assets/images/smart-budget.jpg',
       './assets/images/modal_smart-budget2.jpg',
@@ -25,24 +40,9 @@ const projectsData = [
       'Smart Budget, a cutting-edge Rails web app, simplifies budget management. Take control of your finances, track expenses, categorize transactions, and gain insights into your spending habits.',
     modal_para:
       'Smart Budget, a feature-rich Ruby on Rails web application, simplifies budget management by providing expense tracking, categorization, insights, and customizable budgeting to empower users on their path to financial success. 💡💸',
-    stack: ['Html', 'Rails', 'Sass', 'PostgreSQL'],
+    stack: ['HTML5', 'Rails', 'SCSS', 'PostgreSQL'],
     link: 'https://smartbudget-mhwp.onrender.com/',
     source: 'https://github.com/sahlminkok/smart-budget',
-  },
-  {
-    id: 3,
-    imgSrc: [
-      './assets/images/crypto-metrics.jpg',
-      './assets/images/modal_crypto-metrics.jpg',
-    ],
-    heading: 'Crypto Metrics',
-    paragraph:
-      'Crypto Metrics is a mobile web app for cryptocurrency enthusiasts, simplifying access to essential market data. Whether users seek specific coin details or a broader market overview, Crypto Metrics empowers them to make informed decisions swiftly.',
-    modal_para:
-      'Crypto Metrics is a streamlined and user-friendly single-page web application designed to provide up-to-date information on a wide range of cryptocurrency coins. This application offers a simple and efficient way for users to access current market data for various cryptocurrencies, as well as search and filter coins based on their names or symbols.',
-    stack: ['React', 'Redux Toolkit', 'Css'],
-    link: 'https://cryptometrics-qhlg.onrender.com',
-    source: 'https://github.com/sahlminkok/CryptoMetrics',
   },
   {
     id: 4,
