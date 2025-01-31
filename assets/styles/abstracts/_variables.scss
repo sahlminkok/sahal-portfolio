@@ -1,7 +1,29 @@
-$color-bg-primary: #151859;
-$color-accent-light: #9490ff;
-$color-accent: #7d73fc;
-$color-text-muted: #a2a3ae;
-$color-text-secondary: #edecff;
-$color-border: #646369;
-$color-text-primary: #fff;
+:root {
+  // 🌞 Light Mode (Default)
+  --color-bg-primary: #151859;
+  --color-accent-light: #9490ff;
+  --color-accent: #7d73fc;
+  --color-text-muted: #a2a3ae;
+  --color-text-secondary: #edecff;
+  --color-border: #646369;
+  --color-text-primary: #fff;
+}
+
+[data-theme="dark"] {
+  // 🌙 Dark Mode
+  --color-bg-primary: #0e0f2b;
+  --color-accent-light: #9490ff;
+  --color-accent: #7d73fc;
+  --color-text-muted: #a0a0b5;
+  --color-text-secondary: #b0b0e0;
+  --color-border: #646369;
+  --color-text-primary: #e0e0e0;
+}
+
+$color-bg-primary: var(--color-bg-primary);
+$color-accent-light: var(--color-accent-light);
+$color-accent: var(--color-accent);
+$color-text-muted: var(--color-text-muted);
+$color-text-secondary: var(--color-text-secondary);
+$color-border: var(--color-border);
+$color-text-primary: var(--color-text-primary);
