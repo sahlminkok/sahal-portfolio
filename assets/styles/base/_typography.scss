@@ -19,7 +19,7 @@ body {
     h1 {
       font-size: 4.6rem;
       font-weight: 700;
-      color: $color-primary-2;
+      color: $color-accent;
       letter-spacing: 0.37px;
       line-height: 7.2rem;
     }
@@ -27,7 +27,7 @@ body {
     h2 {
       font-size: 3rem;
       font-weight: 500;
-      color: $color-primary-4;
+      color: $color-text-secondary;
     }
   }
 
@@ -37,7 +37,7 @@ body {
     p {
       font-size: 2rem;
       font-weight: 400;
-      color: $color-primary-4;
+      color: $color-text-secondary;
     }
   }
 }

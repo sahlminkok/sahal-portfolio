@@ -7,10 +7,10 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background: $color-white;
+  background: $color-text-primary;
   border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: $color-primary-3;
+  background: $color-text-muted;
 }
