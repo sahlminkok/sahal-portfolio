@@ -22,10 +22,24 @@
     background-color: #5e42d7;
     box-shadow: 0 0.5rem 1rem rgba($color-accent, 0.15);
     transform: translateY(0);
-    color: #edecff;
+    color: $color-text-secondary;
   }
 
   &:disabled {
     background-color: #000;
   }
+}
+
+.dark-mode-btn {
+  background-color: transparent;
+  border-left: 1px solid $color-border;
+  border-bottom: 1px solid $color-border;
+  border-radius: 10px;
+  position: fixed;
+  cursor: pointer;
+  font-size: 2.5rem;
+  top: 0;
+  right: 0;
+  padding: 1.6rem;
+  line-height: 1;
 }
