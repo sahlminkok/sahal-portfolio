@@ -233,3 +233,28 @@ const validateForm = (e) => {
   }
 };
 form.addEventListener('submit', validateForm);
+
+// Enabling Dark mode
+const darkModeBtn = document.querySelector('.dark-mode-btn');
+const currentTheme = localStorage.getItem('theme');
+
+const updateButtonIcon = (theme) => {
+  if (theme === 'dark') {
+    darkModeBtn.innerHTML = '🌙';
+  } else {
+    darkModeBtn.innerHTML = '☀️';
+  }
+};
+
+if (currentTheme) {
+  document.documentElement.setAttribute('data-theme', currentTheme);
+}
+
+darkModeBtn.addEventListener('click', () => {
+  const current = document.documentElement.getAttribute('data-theme');
+  const newTheme = current === 'dark' ? 'light' : 'dark';
+
+  document.documentElement.setAttribute('data-theme', newTheme);
+  localStorage.setItem('theme', newTheme);
+  updateButtonIcon(newTheme);
+});
